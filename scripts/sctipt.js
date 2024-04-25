@@ -26,7 +26,7 @@ document.getElementsByClassName("submit")[0].onclick = function () {
     var isChanged = false;
     for (let i = 0; i < array.length; i++) {
         if (document.getElementsByClassName("code")[0].value == array[i]) {
-            h2.innerHTML = answer[i];
+            document.getElementsByClassName('title')[0].innerHTML = answer[i];
             isChanged = true;
         }
     }   
@@ -35,4 +35,4 @@ document.getElementsByClassName("submit")[0].onclick = function () {
     }
 }
 
-h2.innerHTML = "Привіт, це невеликий 'квест'))<br/>Памятаєш місце де я вдягнув тобі кільце вперший раз?<br/>Так ось, там буде код який тобі треба ввести в сюди, далі буде наступна загадка))";
+document.getElementsByClassName('title')[0].innerHTML = "Привіт, це невеликий 'квест'))<br/>Памятаєш місце де я вдягнув тобі кільце вперший раз?<br/>Так ось, там буде код який тобі треба ввести в сюди, далі буде наступна загадка))";
